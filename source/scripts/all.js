@@ -1,0 +1,6 @@
+//= require 'modernizr.custom.js'
+//= require 'vendor/masonry.pkgd.min.js'
+//= require_tree './vendor'
+//= require 'vertical_tabs'
+//= require 'modal'
+//= require 'modules/basic_tabs'

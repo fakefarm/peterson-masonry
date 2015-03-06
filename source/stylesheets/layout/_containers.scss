@@ -1,0 +1,51 @@
+// _dw TODO use a mixin to keep various laouts the same, but not a global l-container.
+
+.l-container {
+  @include outer-container;
+  padding: 0 0.5em;
+  @include media($medium-screen) {
+    margin-top: 5em;
+  }
+}
+
+.l-banner {
+  @include row();
+}
+
+.l-grid-container {
+  @include outer-container();
+  @include media($medium-screen) {
+    margin-top: 3em;
+  }
+  li {
+    img { width: 100%; }
+    @include media($medium-screen) {
+      @include span-columns(4);
+      margin-bottom: 1em;
+      @include omega(3n);
+    }
+  }
+}
+
+.contact {
+  margin-top: 1em;
+  padding: 1em;
+  @include row();
+  border: 1px solid $light-gray;
+  border-radius: 5px;
+  @include media($medium-screen) {
+    margin-top: 0;
+    padding: 3em;
+  }
+  h1 { text-align: center; }
+  .col {
+    @include span-columns(12);
+    @include media($medium-screen) {
+      @include span-columns(6);
+    }
+    p {
+      font-size: 1.5em;
+      margin-bottom: 0.25em;
+    }
+  }
+}
