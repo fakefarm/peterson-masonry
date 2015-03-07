@@ -10,6 +10,11 @@ title: "clov3r.com | <3 your site"
     </div>
   </div>
 </div>
+
+<div class="logo-box">
+    <%= image_tag 'logo.jpg' %>
+</div>
+
 <div class="l-container">
   <ul class="bullets">
     <li class="bullet three-col-bullet">
@@ -35,7 +40,7 @@ title: "clov3r.com | <3 your site"
 </div>
 
 <div class="l-grid-container">
-  <h1 class="title">Our work</h1>
+  <h1 class="title">You choose</h1>
   <ul>
     <li><%= image_tag 'thumb/02.jpg' %></li>
     <li><%= image_tag 'thumb/03.jpg' %></li>
@@ -60,12 +65,8 @@ title: "clov3r.com | <3 your site"
       <p>Fax:706-243-4220</p>
     </div>
     <div class="col">
-      <p>Email: <%= mail_to 'aaron@petersonmasonry.com', 'aaron@petersonmasonry.com' %></p>
+      <p><%= mail_to 'aaron@petersonmasonry.com', 'Email Aaron' %></p>
       <p>Rome, GA</p>
     </div>
   </div>
-</div>
-
-<div class="logo-box">
-    <%= image_tag 'logo.jpg' %>
 </div>
